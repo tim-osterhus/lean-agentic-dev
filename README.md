@@ -111,5 +111,3 @@ Every session appends to `agents/historylog.md` with a short summary, files touc
 - `quickstart.md` — step-by-step usage guide
 - `AGENTS.md` — main agent entrypoint and guardrails
 - `agents/_customize.md` — one-time onboarding prompt
-- `agents/prompts/skill_create.md` — create a new skill (project-specific)
-- `agents/prompts/role_create.md` — create a new role (project-specific)
