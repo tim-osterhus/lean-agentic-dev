@@ -1,3 +1,7 @@
+![License](https://img.shields.io/badge/license-Apache%202.0-blue)
+![Status](https://img.shields.io/badge/status-active-success)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
+
 # Lean Agentic Dev
 
 A lightweight, project-agnostic framework for running agentic development with clear roles, repeatable prompts, and consistent logging.
