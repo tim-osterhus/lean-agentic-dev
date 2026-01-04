@@ -29,7 +29,7 @@ If there is no active task, stop and ask for one.
 2) **Plan:** derive a task prompt artifact (under `agents/prompts/tasks/`) when ready to execute.
 3) **Build:** execute the prompt; make the smallest viable changes.
 4) **QA:** run `agents/prompts/qa_cycle.md` when applicable.
-5) **Document:** Builder/QA runs append a concise summary to `agents/historylog.md`. Advisor runs only log when performing concrete actions beyond writing task cards.
+5) **Document:** Builder/QA runs prepend a concise summary to `agents/historylog.md` (newest first). Advisor runs only log when performing concrete actions beyond writing task cards.
 6) **Archive:** move executed prompts to `agents/prompts/completed/`.
 
 ---
@@ -51,7 +51,7 @@ Roles are defined in `agents/roles/` (one file per role). Use one role at a time
 
 ## 6) Output + logging requirements
 
-Every Builder/QA run **must** append to `agents/historylog.md`. Advisor runs only log when performing concrete actions beyond writing task cards:
+Every Builder/QA run **must** prepend to `agents/historylog.md` (newest first). Advisor runs only log when performing concrete actions beyond writing task cards:
 
 `[YYYY-MM-DD] AgentName • Task Title`
 

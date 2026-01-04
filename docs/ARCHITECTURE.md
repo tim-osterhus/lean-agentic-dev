@@ -24,7 +24,7 @@ This framework provides a stable structure for running agentic development in a 
 
 ### 4) History and Continuity
 
-- `agents/historylog.md` — an append-only log of Builder/QA outcomes.
+- `agents/historylog.md` — a prepend-only log of Builder/QA outcomes (newest first).
 - `agents/outline.md` — repo map and system overview used as primary context.
 
 ## Workflow Overview

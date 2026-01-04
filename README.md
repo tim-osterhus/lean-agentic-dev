@@ -104,7 +104,7 @@ Note: several starter skills are often project-specific and can be removed durin
 
 ### 7) History Logging
 
-Every session appends to `agents/historylog.md` with a short summary, files touched, decisions, and follow-ups. This makes agent work auditable and easy to resume.
+Every session prepends to `agents/historylog.md` (newest first) with a short summary, files touched, decisions, and follow-ups. This makes agent work auditable and easy to resume.
 
 ## Files Worth Reading
 

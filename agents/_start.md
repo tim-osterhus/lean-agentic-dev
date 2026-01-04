@@ -11,7 +11,7 @@ Follow the workflow exactly so QA can validate your work without guesswork.
 
 ## Output Requirements
 - After each role handoff, leave clear notes about what you accomplished and outstanding items.
-- When you finish or cannot proceed, append an entry to `agents/historylog.md` using the template in that file.
+- When you finish or cannot proceed, prepend an entry to `agents/historylog.md` (newest first) using the template in that file.
 - Do **not** continue beyond blockers—stop and document what you need.
 
 ## Safety Reminders

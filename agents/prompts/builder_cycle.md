@@ -22,11 +22,11 @@ Workflow:
    - Work only on the checkpoint authorized by the plan.
    - Keep diffs small; stage changes logically.
    - If you encounter ambiguity or scope creep, pause, switch back to Planner Architect, and update the plan before touching more files.
-4. After implementation, activate **Documentation Writer** to draft the history log entry text. When your summary is final (success or blocked), append it to `agents/historylog.md`.
+4. After implementation, activate **Documentation Writer** to draft the history log entry text. When your summary is final (success or blocked), prepend it to `agents/historylog.md` (newest first).
 5. Before writing the history log entry, check whether this cycle produced a repeatable lesson worth adding to a skill:
    - If yes, update the relevant SKILL.md (1–2 lines) and add a full entry to its `EXAMPLES.md` with the exact fix, files touched, and commands/logs.
    - If not, proceed without changes.
-6. After the skill check, append the history log entry to `agents/historylog.md`.
+6. After the skill check, prepend the history log entry to `agents/historylog.md` (newest first).
 7. Activate the Builder-side QA sanity check:
    - As the relevant specialist, run smoke tests/lints directly tied to your work and record commands/results.
    - Do *not* produce the full QA expectations—that belongs to the QA cycle.
@@ -35,12 +35,12 @@ Workflow:
    - Tests/commands run and outcomes.
    - Known gaps/blockers.
    - Whether the history log was updated and any TODOs that remain.
-9. **Orchestration signal (if supervised):** When completely finished (success or blocked), append the following marker to `agents/historylog.md` on a new line by itself:
+9. **Orchestration signal (if supervised):** When completely finished (success or blocked), prepend the following marker to `agents/historylog.md` on a new line by itself:
    ```
    ### BUILDER_COMPLETE
    ```
    This signals a supervisor agent (if running) that you have finished your cycle.
 
 Stop immediately if blocked. Output the blocker details and the checkpoint you were addressing. Do not attempt to continue with guesses.
-When blocked, append the blocker details and remaining TODOs to `agents/historylog.md` before stopping.
+When blocked, prepend the blocker details and remaining TODOs to `agents/historylog.md` before stopping.
 ```

@@ -40,7 +40,7 @@ If required inputs are missing:
 
 ## Output contract
 Primary deliverable:
-- A new entry appended to `agents/historylog.md` following the repo’s existing format.
+- A new entry prepended to `agents/historylog.md` (newest first) following the repo’s existing format.
 
 Secondary deliverables (only if needed):
 - Optional: update `agents/tasks.md` status (Done / Blocked) with a pointer to the historylog entry

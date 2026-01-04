@@ -31,13 +31,13 @@ Phase C — Outcomes:
 10. Before writing the history log entry, check whether this cycle produced a repeatable lesson worth adding to a skill:
     - If yes, update the relevant SKILL.md (1–2 lines) and add a full entry to its `EXAMPLES.md` with the exact fix, files touched, and commands/logs.
     - If not, proceed without changes.
-11. Append the QA entry to `agents/historylog.md` and stop.
+11. Prepend the QA entry to `agents/historylog.md` (newest first) and stop.
 12. End your output with:
     - Summary of validation results.
     - Tests run (command + status).
     - Link to `agents/expectations.md` and whether it was satisfied.
     - Pointer to `agents/quickfix.md` if created.
-13. **Orchestration signal (if supervised):** When completely finished, append the following marker to `agents/historylog.md` on a new line by itself:
+13. **Orchestration signal (if supervised):** When completely finished, prepend the following marker to `agents/historylog.md` on a new line by itself:
    ```
    ### QA_COMPLETE
    ```
